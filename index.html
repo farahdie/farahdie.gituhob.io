@@ -49,6 +49,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* Hover Effect */
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
     }
 
     .card h3 {
@@ -71,6 +78,7 @@
     .profile { grid-column: span 6; grid-row: span 2; }
     .location { grid-column: span 3; }
     .hobby { grid-column: span 3; }
+    .reflection { grid-column: span 3; }
     .tech { grid-column: span 6; }
     .case-study { grid-column: span 6; }
     .playlist { grid-column: span 12; }
@@ -98,13 +106,18 @@
     .socials {
       margin-top: 18px;
       display: flex;
-      gap: 14px;
+      gap: 16px;
       font-size: 0.9rem;
     }
 
-    .socials span {
+    .socials a {
       color: var(--accent);
-      cursor: pointer;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .socials a:hover {
+      text-decoration: underline;
     }
 
     ul {
@@ -134,9 +147,9 @@
         <div class="tagline">“Where Science Meets Sustainable Agriculture”</div>
       </div>
       <div class="socials">
-        <span>LinkedIn</span>
-        <span>GitHub</span>
-        <span>UMT Portal</span>
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">UMT Portal</a>
       </div>
     </div>
 
@@ -151,6 +164,16 @@
     <div class="card hobby">
       <h3>Hobby</h3>
       <p>Evening walks at Pantai UMT</p>
+    </div>
+
+    <!-- NEW Card: Reflection -->
+    <div class="card reflection">
+      <h3>Why Food Tech Matters in Malaysia</h3>
+      <p>
+        Sustainable food security is crucial for our future.
+        By optimizing local processing methods, we can reduce waste
+        and improve nutrition.
+      </p>
     </div>
 
     <!-- Card 3: Subjects -->
@@ -181,10 +204,13 @@
     <!-- Card 6: Playlist -->
     <div class="card playlist">
       <h3>Playlist</h3>
-      <p>Music player placeholder — calm ocean tones for focused study sessions</p>
-    </div>
+    <iframe style="border-radius:12px" 
+src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?ut
+m_source=generator&theme=0" width="100%" height="152" frameBorder="0" 
+allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
 
 </body>
 </html>
-
+sss

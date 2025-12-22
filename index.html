@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Farah Nurfaghira — Student Bento Grid</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
@@ -52,14 +51,13 @@
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-  .profile {
-  background-image: url("bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
+    .profile {
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     
-
     /* Hover Effect */
     .card:hover {
       transform: scale(1.02);
@@ -132,6 +130,26 @@
       padding-left: 18px;
     }
 
+    /* Button Styling */
+    .btn-timer {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 20px;
+      background-color: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-timer:hover {
+      background-color: #082d47;
+      transform: translateY(-2px);
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .container {
@@ -146,7 +164,6 @@
 <body>
 
   <div class="container">
-    <!-- Card 1: Profile -->
     <div class="card profile">
       <div>
         <h3>Profile</h3>
@@ -161,20 +178,17 @@
       </div>
     </div>
 
-    <!-- Card 2: Location -->
     <div class="card location">
       <h3>Location</h3>
       <p>Universiti Malaysia Terengganu (UMT)</p>
       <p>Kuala Nerus</p>
     </div>
 
-    <!-- Card 5: Hobby -->
     <div class="card hobby">
       <h3>Hobby</h3>
       <p>Evening walks at Pantai UMT</p>
     </div>
 
-    <!-- NEW Card: Reflection -->
     <div class="card reflection">
       <h3>Why Food Tech Matters in Malaysia</h3>
       <p>
@@ -184,7 +198,6 @@
       </p>
     </div>
 
-    <!-- Card 3: Subjects -->
     <div class="card tech">
       <h3>Subjects</h3>
       <ul>
@@ -199,27 +212,27 @@
       </ul>
     </div>
 
-    <!-- Card 4: Case Study -->
     <div class="card case-study">
-      <h3>Case Study</h3>
-      <p><strong>Poor soil health due to overuse of chemicals</strong></p>
-      <p>
-        Soil samples were tested for pH, nitrogen, phosphorus, potassium,
-        and organic matter to evaluate long-term chemical impact on soil quality.
-      </p>
+      <div>
+        <h3>Case Study</h3>
+        <p><strong>Poor soil health due to overuse of chemicals</strong></p>
+        <p>
+          Soil samples were tested for pH, nitrogen, phosphorus, potassium,
+          and organic matter to evaluate long-term chemical impact on soil quality.
+        </p>
+      </div>
+      <a href="https://farahdie.github.io/focus-timer-app/app.html" target="_blank" class="btn-timer">Try My Focus Timer App</a>
     </div>
 
-    <!-- Card 6: Playlist -->
     <div class="card playlist">
       <h3>Playlist</h3>
-    <iframe style="border-radius:12px" 
-src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?ut
-m_source=generator&theme=0" width="100%" height="152" frameBorder="0" 
-allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
-fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0" 
+        width="100%" height="152" frameBorder="0" 
+        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+        fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
   </div>
 
 </body>
 </html>
-sss
-
